@@ -1,0 +1,92 @@
+/* ============================================================
+    MOBILE STYLES
+============================================================ */
+
+@media screen and (min-width:$small-screen) {
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+.mobile-nav .title-bar {
+    background-color: $pure-white;
+    border-bottom: 1px solid $orange;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.mobile-nav img {
+    height: 54px; //set logo size
+}
+
+.mobile-nav .menu-icon:after {
+    display: none; //remove default foundation icon
+}
+
+.mobile-nav .menu-icon:before {
+    font-family: "Font Awesome 6 Pro"; //set new icon
+    font-weight: 900;
+    content: "\f0c9";
+    color: $orange;
+    font-size: 28px;
+}
+
+//Menu and submenu stylings
+
+.mobile-nav .top-bar {
+    background-color: $pure-white;
+    border-bottom: 1px solid $orange;
+    padding: unset;
+}
+
+.mobile-nav .top-bar ul {
+    background-color: transparent;
+}
+
+.mobile-nav .top-bar ul li {
+    border-bottom: none;
+    padding: 20px 0 20px 0;
+}
+
+.mobile-nav .top-bar ul li a {
+    color: $dark-gray;
+    font-weight: 700;
+}
+
+.mobile-nav .top-bar ul li .is-accordion-submenu {
+    background-color: $beige;
+    border-top: 1px solid $orange;
+    border-bottom: 1px solid $orange;
+}
+
+.mobile-nav .top-bar ul li .is-accordion-submenu li {
+    background-color: $beige;
+    padding: 10px;
+}
+
+.mobile-nav .top-bar ul li .is-accordion-submenu a {
+    color: $orange;
+}
+
+//give section
+
+.mobile-nav .top-bar ul li .is-accordion-submenu li.give {
+    background-color: $dark-beige;
+    border-top: 1px solid $orange;
+}
+
+.mobile-nav .top-bar ul li .is-accordion-submenu li.give>a:after {
+    font-family: "Font Awesome 6 Pro";
+    position: absolute;
+    font-weight: 900;
+    content: "\f4be";
+    color: $orange;
+    right: 1rem;
+    transition: $transition;
+}
+
+//mobile accordion icon override
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle)>a::after {
+    right: 2rem;
+}

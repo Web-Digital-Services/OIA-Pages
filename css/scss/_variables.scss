@@ -1,0 +1,84 @@
+/* ============================================================
+
+    VARIABLES
+
+    Includes: Typography, Font Weights, Colors, Icons, Shadows, Padding & Margin, Rounded Corners
+
+============================================================ */
+
+// ======= Grid
+$global-width: rem-calc(1440px);
+
+// ======= Typography
+
+$serif-font: "Lora",
+serif;
+$sans-serif-font: "Nunito Sans",
+sans-serif;
+$fa-font-path: "/webfonts/";
+
+// ======= Font Weights
+
+$black-font-weight: 900;
+$bold-font-weight: 700;
+
+// ======= Colors
+
+$orange: #AD4200;
+$tangerine: #D45D00;
+$dark-orange: #7A0F00;
+$pure-white: #FFF;
+$off-white: #F1F5F7;
+$off-black: #171717;
+$blue: #27829E;
+$dark-beige: #EFE1CC;
+$beige: #F0ECE2;
+$gray: #667075;
+$light-gray: #E0E5E6;
+$dark-gray: #333D42;
+$gray: #F0ECE2;
+$orange-link:#FFDEBD;
+$orange-underline:#ffd1a3;
+$gray-link: #FFF1DB;
+$red: #ae0014;
+
+// ======= Transition
+
+$transition: .3s ease-in-out;
+
+// ======= Icons
+
+$fa-font-size-base: rem-calc(18px) !default;
+$fa-fw-width: math.div(20em, 18);
+
+// ======= Shadows
+
+$shadow: rem-calc(3px 3px 7px 0) rgba(23, 23, 23, 0.50); //apply box-shadow to base element (transition .3 ease-in-out)
+$shadow-hover: rem-calc(3px 8px 7px 0) rgba(23, 23, 23, 0.50); //apply box-shadow to :hover
+$shadow-2: rem-calc(0px 2px 5px 0) rgba(23, 23, 23, 0.35);
+$shadow-3: rem-calc(3px 3px 7px 0) rgba(23, 23, 23, 0.35);
+//shadow effect for squircle
+
+// ======= Padding & Margin
+
+$top-bottom: rem-calc(30px 0 30px 0);
+$top-bottom-2: rem-calc(60px 0 60px 0);
+
+// ======= Rounded Corners
+
+$rounded-corners: rem-calc(5px);
+
+// ======= Gradients
+
+$gray-gradient-left: linear-gradient(-75deg, rgba(26, 36, 41, 0) 20%, rgba(26, 36, 41, 0.75), rgba(26, 36, 41, 1));
+$orange-gradient-left: linear-gradient(-75deg, rgba(148, 41, 0, 0) 20%, rgba(148, 41, 0, 0.75), rgba(148, 41, 0, 1));
+$white-gradient-left: linear-gradient(-75deg, rgba(241, 245, 247, 0) 20%, rgba(241, 245, 247, 0.75), rgba(241, 245, 247, 1));
+
+$gray-gradient-right: linear-gradient(75deg, rgba(26, 36, 41, 0) 20%, rgba(26, 36, 41, 0.75), rgba(26, 36, 41, 1));
+$orange-gradient-right: linear-gradient(75deg, rgba(148, 41, 0, 0) 20%, rgba(148, 41, 0, 0.75), rgba(148, 41, 0, 1));
+$white-gradient-right: linear-gradient(75deg, rgba(241, 245, 247, 0) 20%, rgba(241, 245, 247, 0.75), rgba(241, 245, 247, 1));
+
+// ======= Screen sizes
+
+$small-screen: 639px;
+$medium-screen: 1024px;

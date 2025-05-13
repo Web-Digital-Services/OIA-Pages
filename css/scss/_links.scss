@@ -1,0 +1,84 @@
+%link-underline {
+    //background-image: linear-gradient($tangerine, $tangerine),linear-gradient(to right, $tangerine, $tangerine 10%, $orange 25%, $dark-orange);
+    background-image: linear-gradient($orange-underline, $orange-underline), linear-gradient($dark-orange, $dark-orange);
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: .5s cubic-bezier(0.37, 0.01, 0.2, 1);
+}
+
+%link-underline-hover {
+    background-size: 0 2px, 100% 2px;
+}
+
+// ======= Overwrite gloabl link effect
+a {
+    color: $orange;
+    text-decoration: none;
+    transition: .5s ease-out;
+
+    &:hover,
+    &:focus {
+        color: $dark-orange;
+        text-decoration: none;
+    }
+
+    &:focus-visible {
+        outline-color: $blue;
+        outline-width: rem-calc(8px);
+        outline-offset: rem-calc(10px);
+    }
+
+}
+
+// ======= apply link styles to paragraph text
+p {
+    >a:not(.button) {
+        position: relative;
+        text-decoration: none;
+        font-weight: $black-font-weight;
+        font-size: 18.7px;
+        @extend %link-underline;
+
+        &:hover,
+        &:focus {
+            @extend %link-underline-hover
+        }
+    }
+
+    a.no-underline {
+        background-image: none; //Class to remove default underline
+    }
+}
+
+//Add arrow to end of link
+a.arrow {
+    &:after {
+        display: inline-block;
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 900;
+        content: "\f0da";
+        color: inherit;
+        margin-left: .3rem;
+        transition: .5s ease-out;
+    }
+
+    &:hover:after,
+    &:focus:after {
+        color: inherit;
+        transform: translatex(.2rem);
+    }
+}
+
+
+//Highlighter Links
+a.highlight {
+    background-color: $orange;
+    color: $off-white;
+    background-image: linear-gradient(transparent, transparent), linear-gradient($dark-orange, $dark-orange) !important;
+
+    &:hover {
+        color: $dark-orange;
+        background-color: inherit;
+    }
+}

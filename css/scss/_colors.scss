@@ -1,0 +1,55 @@
+/* ============================================================
+    COLORS
+============================================================ */
+
+// ======= Neutral
+
+.light-beige {
+    background-color: $light-gray !important;
+}
+
+.beige {
+    background-color: $gray !important;
+}
+
+.dark-beige {
+    background-color: $dark-gray !important;
+}
+
+.light-grey {
+    background-color: $light-gray !important;
+}
+
+.off-white {
+    background-color: $off-white;
+}
+
+// ======= Accents
+//use .color + .(desired color)
+.color {
+    color: $off-white;
+    background-color: $blue;
+    &.orange {
+        background-color: $orange !important;
+    }
+    &.darken {
+        background-color: $dark-orange !important;
+    }
+    &.grey {
+        background-color: $gray !important;
+    }
+    &.dark-grey {
+        background-color: $dark-gray !important;
+    }
+    &.blue {
+        background-color: $blue !important;
+    }
+}
+
+.text-accent {
+    color: $blue;
+}
+
+.gold {
+    color: $tangerine;
+}

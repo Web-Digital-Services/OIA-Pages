@@ -1,0 +1,17 @@
+/* ============================================================
+    Sidecars
+============================================================ */
+
+.sidecar {
+    color: $off-black;
+    border: none;
+    background-color: $beige;
+    padding: rem-calc(50px);
+    //display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.sidecar hr {
+    border-bottom: 1px solid $off-black;
+}

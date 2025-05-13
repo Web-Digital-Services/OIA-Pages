@@ -1,0 +1,82 @@
+    /* ============================================================
+    BLEEDS
+============================================================ */
+
+    .grid-container {
+        padding-top: rem-calc(60px);
+        padding-bottom: rem-calc(60px);
+    }
+
+    .roomy {
+        padding-top: rem-calc(90px);
+        padding-bottom: rem-calc(90px);
+
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(10px);
+            padding-bottom: rem-calc(10px);
+        }
+    }
+
+    .extra-roomy {
+        padding-top: rem-calc(120px);
+        padding-bottom: rem-calc(120px);
+
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(15px);
+            padding-bottom: rem-calc(15px);
+        }
+    }
+
+    .chonky {
+        padding-top: rem-calc(180px);
+        padding-bottom: rem-calc(180px);
+
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(30px);
+            padding-bottom: rem-calc(30px);
+        }
+    }
+
+    .godly {
+        padding-top: rem-calc(210px);
+        padding-bottom: rem-calc(210px);
+
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(40px);
+            padding-bottom: rem-calc(40px);
+        }
+    }
+
+    .massive {
+        padding-top: rem-calc(350px);
+        padding-bottom: rem-calc(350px);
+
+        @media screen and (max-width: $small-screen) {
+            padding-top: rem-calc(60px);
+            padding-bottom: rem-calc(60px);
+        }
+    }
+
+    .bleed {
+        background-color: $off-white;
+        color: $off-black;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .bleed.cta {
+        background-color: $orange;
+        color: $off-white;
+    }
+
+    .bleed.cta .subhead {
+        color: $off-white;
+    }
+
+    .bleed.cta a {
+        color: $off-white;
+    }
+
+    .bleed.cta a:hover {
+        color: $orange-link;
+    }
