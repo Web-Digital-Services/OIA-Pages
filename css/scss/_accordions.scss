@@ -13,24 +13,26 @@
 }
 
 .accordion-title {
-  margin-top: rem-calc(16px);
+  //margin-top: rem-calc(16px);
+  letter-spacing: 14%;
   position: relative;
   display: block;
-  padding: 1.25rem 1rem;
-  border: 1px solid $light-gray;
-  border-radius: 6px !important;
+  border: 1px solid $orange;
+  //border-radius: 6px !important;
   border-bottom: rem-calc(1px);
   font-size: rem-calc(18px);
   line-height: 1;
-  color: $off-black;
-  font-weight: 400;
-  box-shadow: rem-calc(0px 1px 3px) $gray;
+  color: $dark-gray;
+  font-weight: 900;
+  text-transform: uppercase;
   transition: background-color .2s ease-out;
+  padding: 20px;
 
   &.heading {
     font-family: $serif-font;
     font-size: rem-calc(32px);
     padding: rem-calc(1rem);
+
   }
 }
 
@@ -42,12 +44,12 @@
 
 .accordion-title::before {
   position: absolute;
-  top: 50%;
+  top: 70%;
   right: rem-calc(12px);
   margin-top: rem-calc(-27px);
   content: "\f107";
   font-family: 'Font Awesome 6 Pro';
-  font-size: rem-calc(60px);
+  font-size: rem-calc(32px);
   font-weight: 900;
   color: $orange;
 }
@@ -55,7 +57,7 @@
 .is-active>.accordion-title::before {
   content: "\f106";
   font-family: 'Font Awesome 6 Pro';
-  font-size: rem-calc(60px);
+  font-size: rem-calc(32px);
   font-weight: 900;
   color: $orange;
 }
@@ -64,108 +66,22 @@
   display: none;
   margin-top: -.5rem;
   padding: rem-calc(30px);
-  border: rem-calc(1px) solid $light-gray;
+  border: rem-calc(1px) solid $orange;
   border-top: none;
-  border-radius: rem-calc(0 0 6px 6px);
+  //border-radius: rem-calc(0 0 6px 6px);
   border-bottom: 1;
   background-color: $pure-white;
   color: $off-black;
 }
 
 :last-child>.accordion-content:last-child {
-  border-bottom: rem-calc(1px) solid $light-gray;
+  border-bottom: rem-calc(1px) solid $orange;
 }
-
-.accordion-item:last-child > :last-child {
-  border-radius: rem-calc(0 0 6px 6px);
-  }
 
 .is-active>.accordion-content {
   display: block;
 }
 
-// ======= Orange Accordion
-.accordion.orange {
-  .accordion-title {
-    color: $off-white !important;
-    border: rem-calc(1px) solid $orange !important;
-    background: $orange !important;
-  }
-
-  .accordion-title:hover,
-  .accordion-title:focus {
-    background: $dark-orange !important;
-  }
-
-  .accordion-title::before {
-    color: $off-white;
-  }
-
-  .is-active>.accordion-title::before {
-    color: $off-white;
-  }
-
-  .accordion-content {
-    background-color: $light-gray;
-    color: $off-black;
-  }
-}
-
-// ======= Grey Accordion
-.accordion.grey {
-
-  .accordion-title {
-    color: $off-white !important;
-    border: rem-calc(1px) solid $gray !important;
-    background: $gray !important;
-  }
-
-  .accordion-title:hover,
-  .accordion-title:focus {
-    background: $dark-gray !important;
-
-  }
-
-  .accordion-title::before {
-    color: $off-white;
-  }
-
-  .is-active>.accordion-title::before {
-    color: $off-white;
-  }
-
-  .accordion-content {
-    background-color: $light-gray;
-    color: $off-black;
-  }
-
-}
-
-// ======= Blue Accordion
-.accordion.blue {
-  .accordion-title {
-    color: $off-white !important;
-    border: rem-calc(1px) solid $blue !important;
-    background: $blue !important;
-  }
-
-  .accordion-title:hover,
-  .accordion-title:focus {
-    background: $blue !important;
-  }
-
-  .accordion-title::before {
-    color: $off-white;
-  }
-
-  .is-active>.accordion-title::before {
-    color: $off-white;
-  }
-
-  .accordion-content {
-    background-color: $light-gray;
-    color: $off-black;
-
-
-  }
+:last-child:not(.is-active)>.accordion-title {
+  border-bottom: rem-calc(1px) solid $orange;
 }

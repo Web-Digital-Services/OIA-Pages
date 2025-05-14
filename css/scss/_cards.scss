@@ -5,11 +5,17 @@
 .card {
     padding: 50px;
     background-color: $off-white;
+    margin-bottom: 0;
 }
 
 .card.white {
     background-color: $pure-white;
     border: 1px solid $light-gray;
+}
+
+.card.white.stripped {
+    border: unset;
+    padding: unset;
 }
 
 .card.beige {

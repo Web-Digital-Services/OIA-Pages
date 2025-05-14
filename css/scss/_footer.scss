@@ -108,6 +108,10 @@ footer {
                 font-size: 65px;
                 font-family: $serif-font;
                 margin-bottom: 0;
+
+                @media screen and (max-width: $small-screen) {
+                    font-size: 36px;
+                }
             }
 
         }
@@ -127,6 +131,10 @@ footer {
             &:hover {
                 color: $orange-link;
             }
+        }
+
+        @media screen and (max-width: $small-screen) {
+            padding: 15px 20px 15px 20px;
         }
     }
 

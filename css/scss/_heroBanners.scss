@@ -204,6 +204,10 @@ header.super-hero+.hero {
     border-bottom: 1px solid $orange;
 }
 
+.hero.no-bottom {
+    border-bottom: unset;
+}
+
 .hero .grid-container {
     border-top: 1px solid $orange;
 }

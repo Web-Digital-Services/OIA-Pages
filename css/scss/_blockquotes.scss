@@ -1,0 +1,23 @@
+.blockquote.beige {
+    background-color: $beige;
+    color: $orange;
+}
+
+.blockquote.beige cite {
+    color: $orange;
+    font-weight: 900;
+    letter-spacing: 14%;
+    font-style: normal;
+}
+
+.blockquote.tangerine {
+    background-color: $tangerine;
+    color: $off-white;
+}
+
+.blockquote.tangerine cite {
+    color: $off-white;
+    font-weight: 900;
+    letter-spacing: 14%;
+    font-style: normal;
+}

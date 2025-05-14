@@ -62,6 +62,11 @@
         color: $off-black;
         padding-left: 90px;
         padding-right: 90px;
+
+        @media screen and (max-width: $small-screen) {
+            padding-left: rem-calc(20px);
+            padding-right: rem-calc(20px);
+        }
     }
 
     .bleed.cta {
@@ -79,4 +84,56 @@
 
     .bleed.cta a:hover {
         color: $orange-link;
+    }
+
+    /* ============================================================
+IMG Fill BLEEDS
+============================================================ */
+
+    .img-fill {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        //background-color: rgba(23, 23, 23, 0.77);
+        color: $off-white;
+        padding-top: 0;
+
+        &.full {
+            .cell {
+                padding-left: rem-calc(15px);
+                padding-right: rem-calc(15px);
+            }
+        }
+
+        >img,
+        >video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: rgba(23, 2, 0, 0.5);
+            object-fit: cover;
+        }
+
+        >video {
+            margin-bottom: rem-calc(-9px);
+        }
+
+        .grid-x {
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+
+        .bottom {
+            object-position: bottom;
+        }
+
+        .top {
+            object-position: top;
+        }
+
+        .center {
+            object-position: center;
+        }
     }

@@ -1,7 +1,6 @@
 /* ============================================================
     DATES
 ============================================================ */
-
 // Plain text event
 .event {
     max-width: rem-calc(450px);
@@ -20,6 +19,7 @@
             line-height: 1;
             text-align: center;
         }
+
         .day {
             font-weight: 900;
             font-size: rem-calc(40px);
@@ -32,9 +32,15 @@
 
     .details {
         padding-left: rem-calc(5px);
+
         .name {
             font-weight: 600;
         }
+
+        .name a {
+            text-decoration: underline;
+        }
+
         .date {
             font-weight: 300;
             max-width: none;
@@ -42,78 +48,36 @@
     }
 }
 
-a.event {
-    &.long { // Long event
-        max-width: rem-calc(450px);
-        background: $gray;
-        //padding: rem-calc(10px) rem-calc(20px);
-        border-radius: $rounded-corners;
-        box-shadow: $shadow-3;
-        @extend %jump-base;
-        margin: 0 0 rem-calc(15px) 0;
-        padding-right: rem-calc(20px);
-
-        .date {
-            background: $orange;
-            color: $off-white;
-            padding: rem-calc(15px) rem-calc(25px);
-            //max-width: unset;
-            border-bottom-left-radius: $rounded-corners;
-            border-top-left-radius: $rounded-corners;
-            transition: .4s ease-in-out;
-
-            //flex-grow: 1;
-        }
-
-        .details {
-            //padding-left: rem-calc(15px);
-            padding-right: rem-calc(15px);
-            flex-grow: 1;
-
-            .name {
-                color: $orange;
-                font-weight: 700;
-                margin-bottom: 0;
-                transition: .4s ease-in-out;
-            }
-        }
-
-        .arrow {
-            flex-grow: 2;
-        }
-        .arrow::after {
-            position: relative;
-            display: block;
-            font-family: "Font Awesome 6 Pro";
-            font-weight: 900;
-            font-size: rem-calc(40px);
-            content: "\f105";
-            margin-right: rem-calc(12px);
-            float: right;
-        }
-    }
+.feed-detail {
+    display: flex;
 }
 
-a.event:hover {
-    &.long { // Long event
-        box-shadow: rem-calc(3px 8px 7px 0) rgba(23, 23, 23, 0.35);
-        @extend %jump-hover;
-        .date {
-            background: $dark-orange;
-        }
+.feed-detail .category {
+    color: $orange;
+    font-weight: 700;
+}
 
-        .details {
-            .name {
-                color: $dark-orange;
-            }
-        }
-    }
+.feed-detail i {
+    color: $orange;
+}
+
+.feed-detail .info {
+    font-family: $sans-serif-font;
+    color: $dark-gray;
+    font-weight: 900;
+    font-size: 19px;
+    letter-spacing: 14%;
+    text-transform: uppercase;
+}
+
+.feed-detail .info-detail {
+    margin-bottom: 1rem;
 }
 
 .datebox {
     width: rem-calc(85px);
     margin-right: rem-calc(20px);
-    color: $off-white;
+    color: $orange;
 
     .month {
         font-weight: 800;
@@ -121,16 +85,18 @@ a.event:hover {
         text-transform: uppercase;
         line-height: 1;
         text-align: center;
-        background: $dark-gray;
+        background: $beige;
         padding-top: 10px;
         padding-bottom: 10px;
+        border-bottom: 1px solid $orange;
     }
+
     .day {
         font-weight: 900;
         font-size: rem-calc(36px);
         line-height: 1;
         text-align: center;
-        background: $gray;
+        background: $beige;
         padding-top: 10px;
         padding-bottom: 10px;
 
@@ -140,36 +106,4 @@ a.event:hover {
             padding-bottom: rem-calc(15px);
         }
     }
-
-    &.blue {
-        .month {
-            background: $blue;
-        }
-        .day {
-            background: $blue;
-        }
-    }
-}
-
-a .datebox { // Interactive datebox
-    width: rem-calc(85px);
-    margin-right: rem-calc(20px);
-    border-radius: $rounded-corners;
-    @extend %jump-base;
-
-    .month {
-        background: $dark-orange;
-        border-top-left-radius: $rounded-corners;
-        border-top-right-radius: $rounded-corners;
-    }
-    .day {
-        background: $orange;
-        border-bottom-left-radius: $rounded-corners;
-        border-bottom-right-radius: $rounded-corners;
-    }
-}
-
-a .datebox:hover {
-    @extend %jump-hover;
-    color: $off-white;
 }
