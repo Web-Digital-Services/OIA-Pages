@@ -34220,6 +34220,10 @@ VERTICAL
   object-fit: cover;
 }
 
+.pane img {
+  aspect-ratio: 1/1;
+}
+
 /* ============================================================
     TABS
 
