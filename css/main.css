@@ -35038,8 +35038,8 @@ div.lines ol li .tags > li {
   left: 0;
   object-fit: cover;
   z-index: -1;
-  width: 500px;
-  max-width: 100%;
+  width: 700px;
+  max-width: none;
 }
 
 nav.orbit-bullets ul {
