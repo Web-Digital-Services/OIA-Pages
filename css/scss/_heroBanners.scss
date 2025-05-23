@@ -221,3 +221,72 @@ header.super-hero+.hero {
 .hero .hero-copy {
     padding: 10px 60px 10px 60px;
 }
+
+@media screen and (max-width:$small-screen) {
+    .hero-accordion .hero-copy {
+        padding: 2rem;
+    }
+}
+
+
+
+.hero-accordion .accordion-item.is-active .accordion-title {
+    display: none;
+
+}
+
+.hero-accordion .accordion-title {
+    border: unset;
+    border-top: 2px solid $pure-white;
+    border-bottom: 2px solid $pure-white;
+    background-color: $orange;
+    color: $pure-white;
+    padding: 20px;
+    font-weight: 800;
+
+}
+
+.hero-accordion .accordion-title:before {
+    position: relative;
+    color: $pure-white;
+    font-size: 18px;
+
+}
+
+.hero-accordion .accordion-title:nth-child(1):before {
+    content: "\f5dc";
+}
+
+.hero-accordion .accordion-title:nth-child(2):before {
+    content: "\f492";
+}
+
+.hero-accordion .accordion-title:nth-child(3):before {
+    content: "\f610";
+}
+
+.hero-accordion .accordion-title:nth-child(4):before {
+    content: "\f496";
+}
+
+.hero-accordion .accordion-title:nth-child(5):before {
+    content: "\f004";
+}
+
+.hero-accordion .accordion-content {
+    position: relative;
+    overflow: hidden;
+    color: $pure-white;
+    background-color: rgba(176, 66, 0, 0.82);
+}
+
+.hero-accordion .accordion-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    width: 500px;
+    max-width: unset;
+
+}

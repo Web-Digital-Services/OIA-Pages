@@ -34220,10 +34220,6 @@ VERTICAL
   object-fit: cover;
 }
 
-.pane img {
-  aspect-ratio: 1/1;
-}
-
 /* ============================================================
     TABS
 
@@ -34972,6 +34968,68 @@ div.lines ol li .tags > li {
 
 .hero .hero-copy {
   padding: 10px 60px 10px 60px;
+}
+
+@media screen and (max-width: 639px) {
+  .hero-accordion .hero-copy {
+    padding: 2rem;
+  }
+}
+.hero-accordion .accordion-item.is-active .accordion-title {
+  display: none;
+}
+
+.hero-accordion .accordion-title {
+  border: unset;
+  border-top: 2px solid #FFF;
+  border-bottom: 2px solid #FFF;
+  background-color: #AD4200;
+  color: #FFF;
+  padding: 20px;
+  font-weight: 800;
+}
+
+.hero-accordion .accordion-title:before {
+  position: relative;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.hero-accordion .accordion-title:nth-child(1):before {
+  content: "\f5dc";
+}
+
+.hero-accordion .accordion-title:nth-child(2):before {
+  content: "\f492";
+}
+
+.hero-accordion .accordion-title:nth-child(3):before {
+  content: "\f610";
+}
+
+.hero-accordion .accordion-title:nth-child(4):before {
+  content: "\f496";
+}
+
+.hero-accordion .accordion-title:nth-child(5):before {
+  content: "\f004";
+}
+
+.hero-accordion .accordion-content {
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  background-color: rgba(176, 66, 0, 0.82);
+}
+
+.hero-accordion .accordion-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+  width: 500px;
+  max-width: unset;
 }
 
 nav.orbit-bullets ul {
