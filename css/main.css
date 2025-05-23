@@ -33420,6 +33420,7 @@ footer.mission .contact .fa-inverse {
 
 .header-nav {
   border-bottom: 1px solid #AD4200;
+  z-index: 1;
 }
 .header-nav .grid-x {
   margin: 0 15px 0 15px;
@@ -34975,6 +34976,14 @@ div.lines ol li .tags > li {
     padding: 2rem;
   }
 }
+.hero-accordion {
+  border-bottom: 1px solid #AD4200;
+}
+
+.hero-accordion ul {
+  margin: 0;
+}
+
 .hero-accordion .accordion-item.is-active .accordion-title {
   display: none;
 }
@@ -35020,6 +35029,7 @@ div.lines ol li .tags > li {
   overflow: hidden;
   color: #FFF;
   background-color: rgba(176, 66, 0, 0.82);
+  margin-top: 0;
 }
 
 .hero-accordion .accordion-content img {
@@ -35029,7 +35039,7 @@ div.lines ol li .tags > li {
   object-fit: cover;
   z-index: -1;
   width: 500px;
-  max-width: unset;
+  max-width: 100%;
 }
 
 nav.orbit-bullets ul {

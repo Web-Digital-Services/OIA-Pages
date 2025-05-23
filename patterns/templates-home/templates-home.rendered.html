@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/main.css?1748016584326" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1748016584326" media="all" />
+    <link rel="stylesheet" href="../../css/main.css?1748025249446" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1748025249446" media="all" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
@@ -93,22 +93,74 @@
         </div>
     </div>
 </section>
-<section class="hero">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x align-center">
-            <div class="cell large-9 small-12">
-                <h1 class="h5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et </h1>
-
-                <p class="subhead">Lorem ipsum dolor sit amet, consectetur.</p>
-
-                <div class="button-group">
-                    <p><a href="#" class="button">Button Copy</a></p>
-                    <p><a href="#" class="button ghost">Secondary Button</a></p>
-                </div>
+<div class="hero-accordion">
+    <div class="grid-x align-stretch">
+        <div class="cell large-8 medium-7 small-12 align-center-middle text-center">
+            <div class="hero-copy">
+                <h1>I want to make brain health even better</h1>
+                <p><a class="arrow">Explore ways to give</a></p>
             </div>
+
+        </div>
+        <div class="cell large-4 medium-5 small-12">
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <li class="accordion-item is-active" data-accordion-item>
+                    <a href="#" class="accordion-title">Advancing Brain Health</a>
+                    <div class="accordion-content" data-tab-content>
+                        <img src="../../images/hero-1.jpg" alt="adorable pup">
+                        <i class="fa-solid fa-brain"></i>
+                        <h2 class="h5">Advancing Brain Health</h2>
+                        <p>Support innovation in brain health research and treatment.</p>
+                        <p><a class="button white">Learn more</a></p>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">Leading Edge Research</a>
+                    <div class="accordion-content" data-tab-content>
+                        <img src="../../images/hero-1.jpg" alt="adorable pup">
+                        <i class="fa-solid fa-vial"></i>
+                        <h2 class="h5">Leading Edge Research</h2>
+                        <p>Lorum Ipsum. This is a paragraph</p>
+                        <p><a class="button white">Learn more</a></p>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">treating infectious diseases</a>
+                    <div class="accordion-content" data-tab-content>
+                        <img src="../../images/hero-1.jpg" alt="adorable pup">
+
+                        <i class="fa-solid fa-microscope"></i>
+                        <h2 class="h5">Leading Edge Research</h2>
+                        <p>Lorum Ipsum. This is a paragraph</p>
+                        <p><a class="button white">Learn more</a></p>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">promoting metabolic health</a>
+                    <div class="accordion-content" data-tab-content>
+                        <img src="../../images/hero-1.jpg" alt="adorable pup">
+
+                        <i class="fa-solid fa-weight-scale"></i>
+                        <h2 class="h5">Promoting Metabolic Health</h2>
+                        <p>Lorum Ipsum. This is a paragraph</p>
+                        <p><a class="button white">Learn more</a></p>
+                    </div>
+                </li>
+                <li class="accordion-item" data-accordion-item>
+                    <a href="#" class="accordion-title">title here lorem ipsum</a>
+                    <div class="accordion-content" data-tab-content>
+                        <img src="../../images/hero-1.jpg" alt="adorable pup">
+
+                        <i class="fa-solid fa-heart"></i>
+                        <h2 class="h5">Title Here Lorem Ipsum</h2>
+                        <p>Lorum Ipsum. This is a paragraph</p>
+                        <p><a class="button white">Learn more</a></p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-</section>
+</div>
 <section class="large-margin">
     <div class="grid-x align-middle align-stretch">
         <div class="cell small-12 medium-1 align-center-middle text-center side-line">
@@ -349,11 +401,11 @@
 </footer>
 <!--DO NOT REMOVE-->
 <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
-  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-default","lineagePath":"../../patterns/components-hero-hero-default/components-hero-hero-default.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-default","lineagePath":"../../patterns/components-hero-hero-default/components-hero-hero-default.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>Welcome to the home page.</p>\n<p>This page is quite different than most of the pages that will be on OIA due to its &quot;lines&quot; design. These lines are created by applying borders to their grids.</p>\n<p>Due to the lack of margins and padding, in some cases, <code>.grid-container</code> was NOT used in most of these sections - only <code>.grid-x</code>. This was to avoid overriding foundation's grid styles to maintain its integrity for other uses on the site. Therefore, each section is individual in its grid classes.</p>\n<p>Notes -</p>\n<p>-The hero is currently using the default child page hero. The main page CTA hero is still being worked on.</p>\n<p>-Several sections use  <code>.large-margin</code> in each section tag to force content in a fixed centered position.</p>\n<p>-The bookspine sections place the text in a cell with <code>.cell.side-line</code> applied. The cell with the body text is in its own sub grid in its cell.</p>\n<ul>\n<li>The centered headings use <code>.headline</code> to apply its stylings and top/bottom borders. In some cases, <code>.headline.shrink</code> is used to shrink the padding on the top and bottom.<code>.headline.no-border</code> will remove the borders in contexts where multiple borders are against each other.</li>\n</ul>\n<p>-The large orange callout is a 6/6 with a <code>.border-left</code> on the right cell.</p>\n<ul>\n<li>The <code>.pane</code> element involves several <code>.sidecar</code> and imgs. Each invidual component is placed in a cell in a single <code>.grid</code>. The cells take up 4 columns each and wrap to the second row. The grid has borders on all sides using <code>.grid-x.border-top-bottom.border-sides</code>. Currently, the img cells are not matching the height of the sidecars because they're maintaining their aspect ratios. 1/1 aspect ratio images are preferred. May attempt to position the images absolutely to apply object-fit but may conflict with drupal implementation.</li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":""},"patternExtension":"hbs","patternName":"Home","patternPartial":"templates-home","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}}
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-home","lineagePath":"../../patterns/components-hero-hero-home/components-hero-hero-home.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-home","lineagePath":"../../patterns/components-hero-hero-home/components-hero-hero-home.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>Welcome to the home page.</p>\n<p>This page is quite different than most of the pages that will be on OIA due to its &quot;lines&quot; design. These lines are created by applying borders to their grids.</p>\n<p>Due to the lack of margins and padding, in some cases, <code>.grid-container</code> was NOT used in most of these sections - only <code>.grid-x</code>. This was to avoid overriding foundation's grid styles to maintain its integrity for other uses on the site. Therefore, each section is individual in its grid classes.</p>\n<p>Notes -</p>\n<p>-The hero is currently using the default child page hero. The main page CTA hero is still being worked on.</p>\n<p>-Several sections use  <code>.large-margin</code> in each section tag to force content in a fixed centered position.</p>\n<p>-The bookspine sections place the text in a cell with <code>.cell.side-line</code> applied. The cell with the body text is in its own sub grid in its cell.</p>\n<ul>\n<li>The centered headings use <code>.headline</code> to apply its stylings and top/bottom borders. In some cases, <code>.headline.shrink</code> is used to shrink the padding on the top and bottom.<code>.headline.no-border</code> will remove the borders in contexts where multiple borders are against each other.</li>\n</ul>\n<p>-The large orange callout is a 6/6 with a <code>.border-left</code> on the right cell.</p>\n<ul>\n<li>The <code>.pane</code> element involves several <code>.sidecar</code> and imgs. Each invidual component is placed in a cell in a single <code>.grid</code>. The cells take up 4 columns each and wrap to the second row. The grid has borders on all sides using <code>.grid-x.border-top-bottom.border-sides</code>. Currently, the img cells are not matching the height of the sidecars because they're maintaining their aspect ratios. 1/1 aspect ratio images are preferred. May attempt to position the images absolutely to apply object-fit but may conflict with drupal implementation.</li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":""},"patternExtension":"hbs","patternName":"Home","patternPartial":"templates-home","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}}
 </script>
 
 <script>
-  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-default","lineagePath":"../../patterns/components-hero-hero-default/components-hero-hero-default.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-default","lineagePath":"../../patterns/components-hero-hero-default/components-hero-hero-default.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>Welcome to the home page.</p>\n<p>This page is quite different than most of the pages that will be on OIA due to its &quot;lines&quot; design. These lines are created by applying borders to their grids.</p>\n<p>Due to the lack of margins and padding, in some cases, <code>.grid-container</code> was NOT used in most of these sections - only <code>.grid-x</code>. This was to avoid overriding foundation's grid styles to maintain its integrity for other uses on the site. Therefore, each section is individual in its grid classes.</p>\n<p>Notes -</p>\n<p>-The hero is currently using the default child page hero. The main page CTA hero is still being worked on.</p>\n<p>-Several sections use  <code>.large-margin</code> in each section tag to force content in a fixed centered position.</p>\n<p>-The bookspine sections place the text in a cell with <code>.cell.side-line</code> applied. The cell with the body text is in its own sub grid in its cell.</p>\n<ul>\n<li>The centered headings use <code>.headline</code> to apply its stylings and top/bottom borders. In some cases, <code>.headline.shrink</code> is used to shrink the padding on the top and bottom.<code>.headline.no-border</code> will remove the borders in contexts where multiple borders are against each other.</li>\n</ul>\n<p>-The large orange callout is a 6/6 with a <code>.border-left</code> on the right cell.</p>\n<ul>\n<li>The <code>.pane</code> element involves several <code>.sidecar</code> and imgs. Each invidual component is placed in a cell in a single <code>.grid</code>. The cells take up 4 columns each and wrap to the second row. The grid has borders on all sides using <code>.grid-x.border-top-bottom.border-sides</code>. Currently, the img cells are not matching the height of the sidecars because they're maintaining their aspect ratios. 1/1 aspect ratio images are preferred. May attempt to position the images absolutely to apply object-fit but may conflict with drupal implementation.</li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":""},"patternExtension":"hbs","patternName":"Home","patternPartial":"templates-home","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}};
+  window.patternData = {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-home","lineagePath":"../../patterns/components-hero-hero-home/components-hero-hero-home.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"lineage":[{"lineagePattern":"components-main-nav","lineagePath":"../../patterns/components-navigation-main-nav/components-navigation-main-nav.rendered.html"},{"lineagePattern":"components-hero-home","lineagePath":"../../patterns/components-hero-hero-home/components-hero-hero-home.rendered.html"},{"lineagePattern":"components-footer","lineagePath":"../../patterns/components-footer-footer/components-footer-footer.rendered.html"}],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":true,"patternDesc":"<p>Welcome to the home page.</p>\n<p>This page is quite different than most of the pages that will be on OIA due to its &quot;lines&quot; design. These lines are created by applying borders to their grids.</p>\n<p>Due to the lack of margins and padding, in some cases, <code>.grid-container</code> was NOT used in most of these sections - only <code>.grid-x</code>. This was to avoid overriding foundation's grid styles to maintain its integrity for other uses on the site. Therefore, each section is individual in its grid classes.</p>\n<p>Notes -</p>\n<p>-The hero is currently using the default child page hero. The main page CTA hero is still being worked on.</p>\n<p>-Several sections use  <code>.large-margin</code> in each section tag to force content in a fixed centered position.</p>\n<p>-The bookspine sections place the text in a cell with <code>.cell.side-line</code> applied. The cell with the body text is in its own sub grid in its cell.</p>\n<ul>\n<li>The centered headings use <code>.headline</code> to apply its stylings and top/bottom borders. In some cases, <code>.headline.shrink</code> is used to shrink the padding on the top and bottom.<code>.headline.no-border</code> will remove the borders in contexts where multiple borders are against each other.</li>\n</ul>\n<p>-The large orange callout is a 6/6 with a <code>.border-left</code> on the right cell.</p>\n<ul>\n<li>The <code>.pane</code> element involves several <code>.sidecar</code> and imgs. Each invidual component is placed in a cell in a single <code>.grid</code>. The cells take up 4 columns each and wrap to the second row. The grid has borders on all sides using <code>.grid-x.border-top-bottom.border-sides</code>. Currently, the img cells are not matching the height of the sidecars because they're maintaining their aspect ratios. 1/1 aspect ratio images are preferred. May attempt to position the images absolutely to apply object-fit but may conflict with drupal implementation.</li>\n</ul>\n","patternBreadcrumb":{"patternGroup":"templates","patternSubgroup":""},"patternExtension":"hbs","patternName":"Home","patternPartial":"templates-home","patternState":"","patternEngineName":"handlebars","extraOutput":{"order":1}};
 </script>
 
 <script>
@@ -389,10 +441,10 @@
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1748016584326">
+<script id="pl-js-polyfill-insert-1748025249446">
   (function() {
     if (self != top) {
-      var cb = '1748016584326';
+      var cb = '1748025249446';
       var js = [];
       scriptLoader.run(js,cb,'pl-js-polyfill-insert');
     }
@@ -405,7 +457,7 @@
   import('../../styleguide/js/patternlab-pattern.modern.js');
 </script>
 
-<script id="pl-js-insert-1748016584326" nomodule>
+<script id="pl-js-insert-1748025249446" nomodule>
   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on https://goo.gl/REQGQ by Paul Irish). Licensed MIT */
   !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
 

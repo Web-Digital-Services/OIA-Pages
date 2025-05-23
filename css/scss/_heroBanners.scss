@@ -228,6 +228,13 @@ header.super-hero+.hero {
     }
 }
 
+.hero-accordion {
+    border-bottom: 1px solid $orange;
+}
+
+.hero-accordion ul {
+    margin: 0;
+}
 
 
 .hero-accordion .accordion-item.is-active .accordion-title {
@@ -278,6 +285,7 @@ header.super-hero+.hero {
     overflow: hidden;
     color: $pure-white;
     background-color: rgba(176, 66, 0, 0.82);
+    margin-top: 0;
 }
 
 .hero-accordion .accordion-content img {
@@ -287,6 +295,6 @@ header.super-hero+.hero {
     object-fit: cover;
     z-index: -1;
     width: 500px;
-    max-width: unset;
+    max-width: 100%;
 
 }
