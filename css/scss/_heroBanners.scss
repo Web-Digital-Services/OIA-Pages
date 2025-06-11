@@ -232,6 +232,12 @@ header.super-hero+.hero {
     border-bottom: 1px solid $orange;
 }
 
+.hero-accordion .highlight {
+    background-color: $beige;
+    color: $orange;
+    font-style: italic;
+}
+
 .hero-accordion ul {
     margin: 0;
 }

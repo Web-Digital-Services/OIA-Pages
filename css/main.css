@@ -34446,6 +34446,11 @@ img.float-right {
   }
 }
 
+img.frame {
+  outline: 1px solid #171717;
+  border: 10px solid #FFF;
+}
+
 .profile-thumbnail {
   height: 100% !important;
   object-fit: cover;
@@ -34978,6 +34983,12 @@ div.lines ol li .tags > li {
 }
 .hero-accordion {
   border-bottom: 1px solid #AD4200;
+}
+
+.hero-accordion .highlight {
+  background-color: #F0ECE2;
+  color: #AD4200;
+  font-style: italic;
 }
 
 .hero-accordion ul {

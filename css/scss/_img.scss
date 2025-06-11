@@ -21,6 +21,11 @@ img.float-right {
     }
 }
 
+img.frame {
+    outline: 1px solid $off-black;
+    border: 10px solid $pure-white;
+}
+
 // Profile Thumbnails
 .profile-thumbnail {
     height: 100% !important;
