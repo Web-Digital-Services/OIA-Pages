@@ -32002,6 +32002,48 @@ readers do not read off random characters that represent icons */
     Includes: Typography, Font Weights, Colors, Icons, Shadows, Padding & Margin, Rounded Corners
 
 ============================================================ */
+nav.orbit-bullets ul {
+  list-style-type: none;
+}
+nav.orbit-bullets ul button {
+  background-color: #F1F5F7;
+  border: 2px solid #AD4200;
+  transition: 0.1s ease-in-out;
+}
+nav.orbit-bullets ul button:hover {
+  background-color: #F0ECE2;
+  border: none;
+}
+nav.orbit-bullets ul button.is-active {
+  background-color: #AD4200;
+}
+
+.bleed.orbit {
+  background-color: #7A0F00;
+  color: #F1F5F7;
+}
+
+.orbit-controls button.orbit-previous span:after {
+  position: absolute;
+  display: block;
+  right: 0;
+  font-family: "Font Awesome 6 Pro";
+  color: #AD4200;
+  font-weight: 900;
+  font-size: 3.75rem;
+  content: "\f104";
+}
+.orbit-controls button.orbit-next span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  font-family: "Font Awesome 6 Pro";
+  color: #AD4200;
+  font-weight: 900;
+  font-size: 3.75rem;
+  content: "\f105";
+}
+
 /* ============================================================
     TEXT STYLES
 ============================================================ */
@@ -35051,73 +35093,6 @@ div.lines ol li .tags > li {
   z-index: -1;
   width: 700px;
   max-width: none;
-}
-
-nav.orbit-bullets ul {
-  list-style-type: none;
-}
-nav.orbit-bullets ul button {
-  background-color: #F1F5F7;
-  border: 2px solid #AD4200;
-  transition: 0.1s ease-in-out;
-}
-nav.orbit-bullets ul button:hover {
-  background-color: #7A0F00;
-  border: none;
-}
-nav.orbit-bullets ul button.is-active {
-  background-color: #AD4200;
-}
-
-.color nav.orbit-bullets button {
-  border: none;
-}
-.color nav.orbit-bullets button:hover {
-  background-color: #27829E;
-  border: none;
-}
-.color nav.orbit-bullets button.is-active {
-  background-color: #FFF1DB;
-}
-.color.grey nav.orbit-bullets button {
-  border: none;
-}
-.color.grey nav.orbit-bullets button:hover {
-  background-color: #333D42;
-}
-.color.grey nav.orbit-bullets button.is-active {
-  background-color: #FFF1DB;
-}
-.color.orange nav.orbit-bullets button {
-  background-color: #F1F5F7;
-  border: none;
-}
-.color.orange nav.orbit-bullets button:hover {
-  background-color: #7A0F00;
-}
-.color.orange nav.orbit-bullets button.is-active {
-  background-color: #D45D00;
-}
-
-.orbit-controls button.orbit-previous span:after {
-  position: absolute;
-  display: block;
-  right: 0;
-  font-family: "Font Awesome 6 Pro";
-  color: #AD4200;
-  font-weight: 900;
-  font-size: 3.75rem;
-  content: "\f104";
-}
-.orbit-controls button.orbit-next span:after {
-  position: absolute;
-  display: block;
-  left: 0;
-  font-family: "Font Awesome 6 Pro";
-  color: #AD4200;
-  font-weight: 900;
-  font-size: 3.75rem;
-  content: "\f105";
 }
 
 /*# sourceMappingURL=main.css.map */

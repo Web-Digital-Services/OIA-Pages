@@ -10,7 +10,7 @@ nav.orbit-bullets {
             transition: .1s ease-in-out;
 
             &:hover {
-                background-color: $dark-orange;
+                background-color: $gray;
                 border: none;
             }
 
@@ -23,57 +23,9 @@ nav.orbit-bullets {
 
 }
 
-.color {
-    nav.orbit-bullets {
-        button {
-            border: none;
-
-            &:hover {
-                background-color: $blue;
-                border: none;
-            }
-
-            &.is-active {
-                background-color: $gray-link;
-
-            }
-        }
-    }
-
-    &.grey {
-        nav.orbit-bullets {
-            button {
-                border: none;
-
-                &:hover {
-                    background-color: $dark-gray;
-                }
-
-                &.is-active {
-                    background-color: $gray-link;
-
-                }
-            }
-        }
-    }
-
-    &.orange {
-        nav.orbit-bullets {
-            button {
-                background-color: $off-white;
-                border: none;
-
-                &:hover {
-                    background-color: $dark-orange;
-                }
-
-                &.is-active {
-                    background-color: $tangerine;
-
-                }
-            }
-        }
-    }
+.bleed.orbit {
+    background-color: $dark-orange;
+    color: $off-white;
 }
 
 .orbit-controls {
