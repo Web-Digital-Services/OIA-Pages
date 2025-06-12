@@ -32015,12 +32015,26 @@ nav.orbit-bullets ul button:hover {
   border: none;
 }
 nav.orbit-bullets ul button.is-active {
-  background-color: #AD4200;
+  background-color: #D45D00;
 }
 
-.bleed.orbit {
+.orbit {
   background-color: #7A0F00;
   color: #F1F5F7;
+}
+
+.orbit blockquote {
+  color: #F1F5F7;
+  border-left: 0;
+}
+
+.orbit blockquote p {
+  color: #F1F5F7;
+}
+
+.orbit blockquote cite {
+  color: #F1F5F7;
+  border-left: 0;
 }
 
 .orbit-controls button.orbit-previous span:after {
@@ -32028,7 +32042,7 @@ nav.orbit-bullets ul button.is-active {
   display: block;
   right: 0;
   font-family: "Font Awesome 6 Pro";
-  color: #AD4200;
+  color: #D45D00;
   font-weight: 900;
   font-size: 3.75rem;
   content: "\f104";
@@ -32038,7 +32052,7 @@ nav.orbit-bullets ul button.is-active {
   display: block;
   left: 0;
   font-family: "Font Awesome 6 Pro";
-  color: #AD4200;
+  color: #D45D00;
   font-weight: 900;
   font-size: 3.75rem;
   content: "\f105";
@@ -33236,6 +33250,14 @@ footer.mission .contact .fa-inverse {
   background-color: #D45D00;
 }
 
+.beige {
+  background-color: #F0ECE2;
+}
+
+.dark-orange {
+  background-color: #7A0F00;
+}
+
 .gold {
   background-color: #FFBC5B;
 }
@@ -34209,6 +34231,10 @@ VERTICAL
   }
 }
 .outline {
+  border: 1px solid #AD4200;
+}
+
+.borders {
   border: 1px solid #AD4200;
 }
 

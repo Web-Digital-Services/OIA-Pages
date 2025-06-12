@@ -15,7 +15,7 @@ nav.orbit-bullets {
             }
 
             &.is-active {
-                background-color: $orange;
+                background-color: $tangerine;
 
             }
         }
@@ -23,9 +23,23 @@ nav.orbit-bullets {
 
 }
 
-.bleed.orbit {
+.orbit {
     background-color: $dark-orange;
     color: $off-white;
+}
+
+.orbit blockquote {
+    color: $off-white;
+    border-left: 0;
+}
+
+.orbit blockquote p {
+    color: $off-white;
+}
+
+.orbit blockquote cite {
+    color: $off-white;
+    border-left: 0;
 }
 
 .orbit-controls {
@@ -36,7 +50,7 @@ nav.orbit-bullets {
             display: block;
             right: 0;
             font-family: "Font Awesome 6 Pro";
-            color: $orange;
+            color: $tangerine;
             font-weight: 900;
             font-size: rem-calc(60px);
             content: "\f104";
@@ -49,7 +63,7 @@ nav.orbit-bullets {
             display: block;
             left: 0;
             font-family: "Font Awesome 6 Pro";
-            color: $orange;
+            color: $tangerine;
             font-weight: 900;
             font-size: rem-calc(60px);
             content: "\f105";
