@@ -252,9 +252,15 @@
 }
 
 @media screen and (max-width: $small-screen) {
-    .cell.sideline p {
-        transform: rotate(90deg);
-        color: $orange;
+    .cell.side-line {
+        border-right: 0;
+        border-left: 0;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    .cell.side-line p {
+        transform: none;
     }
 }
 
