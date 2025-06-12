@@ -35086,28 +35086,28 @@ div.lines ol li .tags > li {
   position: relative;
   color: #FFF;
   font-size: 18px;
+  content: "";
 }
 
-.hero-accordion .accordion-title:nth-child(1):before {
-  content: "\f5dc";
+/*.hero-accordion .accordion-title:nth-child(1):before {
+    content: "\f5dc";
 }
 
 .hero-accordion .accordion-title:nth-child(2):before {
-  content: "\f492";
+    content: "\f492";
 }
 
 .hero-accordion .accordion-title:nth-child(3):before {
-  content: "\f610";
+    content: "\f610";
 }
 
 .hero-accordion .accordion-title:nth-child(4):before {
-  content: "\f496";
+    content: "\f496";
 }
 
 .hero-accordion .accordion-title:nth-child(5):before {
-  content: "\f004";
-}
-
+    content: "\f004";
+}*/
 .hero-accordion .accordion-content {
   position: relative;
   overflow: hidden;

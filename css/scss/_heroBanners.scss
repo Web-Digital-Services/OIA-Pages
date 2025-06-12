@@ -263,10 +263,11 @@ header.super-hero+.hero {
     position: relative;
     color: $pure-white;
     font-size: 18px;
+    content: "";
 
 }
 
-.hero-accordion .accordion-title:nth-child(1):before {
+/*.hero-accordion .accordion-title:nth-child(1):before {
     content: "\f5dc";
 }
 
@@ -284,7 +285,7 @@ header.super-hero+.hero {
 
 .hero-accordion .accordion-title:nth-child(5):before {
     content: "\f004";
-}
+}*/
 
 .hero-accordion .accordion-content {
     position: relative;
