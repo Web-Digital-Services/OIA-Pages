@@ -5,9 +5,6 @@
 
 .blockquote.beige cite {
     color: $orange;
-    font-weight: 900;
-    letter-spacing: 14%;
-    font-style: normal;
 }
 
 .blockquote.tangerine {
@@ -17,7 +14,15 @@
 
 .blockquote.tangerine cite {
     color: $off-white;
+}
+
+.blockquote cite {
     font-weight: 900;
     letter-spacing: 14%;
+    text-transform: uppercase;
     font-style: normal;
+}
+
+.blockquote.large {
+    font-size: 22px;
 }

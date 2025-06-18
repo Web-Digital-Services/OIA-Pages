@@ -92,12 +92,14 @@
         img {
             transform: scale(1);
             transition: .4s ease-in-out;
+            height: 100%;
+            overflow: hidden;
         }
 
         .card-section {
             position: absolute;
             bottom: 0;
-            background: rgba(23, 23, 23, 0.43);
+            //background: rgba(23, 23, 23, 0.43);
             color: $off-white;
             width: 100%;
             height: 100%;
@@ -111,7 +113,7 @@
             >div {
                 width: 100%;
                 align-self: flex-end;
-                transform: translateY(calc(100% - 4.5rem));
+                transform: translateY(200%);
                 transition: .7s cubic-bezier(0.19, 1, 0.22, 1);
 
                 p {
