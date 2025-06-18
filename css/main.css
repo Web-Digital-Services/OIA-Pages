@@ -32570,6 +32570,10 @@ a.highlight:hover {
   }
 }
 
+.bleed.white {
+  background-color: unset;
+}
+
 .bleed.cta {
   background-color: #AD4200;
   color: #F1F5F7;

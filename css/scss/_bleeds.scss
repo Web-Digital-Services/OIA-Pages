@@ -69,6 +69,10 @@
         }
     }
 
+    .bleed.plain {
+        background-color: unset;
+    }
+
     .bleed.cta {
         background-color: $orange;
         color: $off-white;
