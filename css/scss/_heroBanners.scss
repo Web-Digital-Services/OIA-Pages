@@ -220,6 +220,15 @@ header.super-hero+.hero {
 
 .hero .hero-copy {
     padding: 10px 60px 10px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.hero .headline {
+    text-align: left;
+    padding-left: 60px;
 }
 
 @media screen and (max-width:$small-screen) {
