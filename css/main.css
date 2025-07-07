@@ -32412,6 +32412,17 @@ a.highlight:hover {
   font-size: 22px;
 }
 
+blockquote.story {
+  border-left: none;
+  color: #333D42;
+}
+
+blockquote.story cite {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333D42;
+}
+
 /* ============================================================
     ACCORDIONS
 ============================================================ */

@@ -26,3 +26,14 @@
 .blockquote.large {
     font-size: 22px;
 }
+
+blockquote.story {
+    border-left: none;
+    color: $dark-gray;
+}
+
+blockquote.story cite {
+    font-size: 18px;
+    font-weight: 700;
+    color: $dark-gray;
+}
