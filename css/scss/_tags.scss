@@ -4,7 +4,7 @@
 
     .tags {
         //padding-bottom: rem-calc(30px);
-        margin-top: rem-calc(30px);
+        //margin-top: rem-calc(30px);
 
         @media screen and (max-width: 355px) {
             margin-bottom: rem-calc(30px);
@@ -38,8 +38,14 @@
         }
     }
 
-    ul ul.tags {
+    ul.tags {
         margin-left: 0;
+    }
+
+
+    ul.tags.category li>a{
+        font-size: 16px;
+        padding: .4rem .8rem
     }
 
     div.lines ul li,

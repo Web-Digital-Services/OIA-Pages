@@ -34725,9 +34725,6 @@ figure img {
 /* ============================================================
     TAGS
 ============================================================ */
-.tags {
-  margin-top: 1.875rem;
-}
 @media screen and (max-width: 355px) {
   .tags {
     margin-bottom: 1.875rem;
@@ -34753,8 +34750,13 @@ figure img {
   }
 }
 
-ul ul.tags {
+ul.tags {
   margin-left: 0;
+}
+
+ul.tags.category li > a {
+  font-size: 16px;
+  padding: 0.4rem 0.8rem;
 }
 
 div.lines ul li .tags > li,
