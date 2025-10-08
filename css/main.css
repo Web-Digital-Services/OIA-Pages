@@ -32423,6 +32423,82 @@ blockquote.story cite {
   color: #333D42;
 }
 
+blockquote.fancy {
+  background-color: #E0E5E6;
+}
+blockquote.fancy p {
+  padding: 2rem 1.667rem 1.667rem 2.75rem;
+  color: #171717;
+}
+blockquote.fancy p:first-of-type::before {
+  content: "“";
+  position: absolute;
+  top: -3.125rem;
+  left: -0.3125rem;
+  font-size: 8.33rem;
+  color: #27829E;
+}
+blockquote.fancy p:last-of-type::after {
+  content: "”";
+}
+
+blockquote.fancy cite {
+  background-color: #27829E;
+  color: #F1F5F7;
+  padding: 1.667rem;
+  font-weight: 900;
+}
+
+blockquote {
+  color: #333D42;
+  border-left: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+blockquote p {
+  color: #333D42;
+  line-height: inherit;
+}
+blockquote p + cite {
+  margin-top: -0.5rem;
+}
+
+cite {
+  color: #333D42;
+  font-style: italic;
+  font-weight: 600;
+  font-size: inherit;
+}
+cite a {
+  font-weight: 700;
+}
+
+cite:before {
+  content: "—";
+  margin-right: 0.25rem;
+}
+
+.bleed.pullquote blockquote p:first-of-type::before {
+  content: "“";
+  position: absolute;
+  top: -6.875rem;
+  left: -3.125rem;
+  font-size: 8.33rem;
+}
+@media screen and (max-width: 639px) {
+  .bleed.pullquote blockquote p:first-of-type::before {
+    left: -0.3125rem;
+  }
+}
+.bleed.pullquote blockquote p:last-of-type::after {
+  content: "”";
+}
+
+.bleed.color.pullquote {
+  color: #F1F5F7;
+}
+
 /* ============================================================
     ACCORDIONS
 ============================================================ */
