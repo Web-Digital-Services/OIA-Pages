@@ -32449,6 +32449,37 @@ blockquote.fancy cite {
   font-weight: 900;
 }
 
+blockquote.fancy {
+  background-color: #E0E5E6;
+}
+blockquote.fancy p {
+  padding: 2rem 1.667rem 1.667rem 2.75rem;
+  color: #171717;
+}
+blockquote.fancy p:first-of-type::before {
+  content: "“";
+  position: absolute;
+  top: -3.125rem;
+  left: -0.3125rem;
+  font-size: 8.33rem;
+  color: #27829E;
+}
+blockquote.fancy p:last-of-type::after {
+  content: "”";
+}
+
+blockquote.fancy.orange {
+  background-color: #F0ECE2;
+}
+blockquote.fancy.orange p:first-of-type::before {
+  color: #AD4200;
+}
+
+blockquote.fancy.orange cite {
+  background-color: #AD4200;
+  color: #F1F5F7;
+}
+
 blockquote {
   color: #333D42;
   border-left: none;

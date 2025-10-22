@@ -64,6 +64,39 @@ blockquote.fancy cite {
     font-weight: 900;
 }
 
+blockquote.fancy {
+    background-color: $light-gray;
+    p {
+        padding: 2rem 1.667rem 1.667rem 2.75rem;
+        color: $off-black;
+        &:first-of-type::before {
+            content: "\201C";
+            position: absolute;
+            top: rem-calc(-50px);
+            left: rem-calc(-5px);
+            font-size: 8.33rem;
+            color: $blue;
+        }
+        &:last-of-type::after {
+            content: "\201D";
+        }
+    }
+}
+
+blockquote.fancy.orange {
+    background-color: $beige;
+    p {
+        &:first-of-type::before {
+            color: $orange;
+        }
+    }
+}
+
+blockquote.fancy.orange cite {
+    background-color: $orange;
+    color: $off-white;
+}
+
 blockquote {
     color: $dark-gray;
     border-left: none;
